@@ -1,0 +1,33 @@
+#cryptage
+
+Messageacrypter= str(input("entrez le texte a crypter: "))
+cle=24 # on décale la lettre de 24 positions (Y est la 25e lettre de l'alphabet)
+
+acrypter=Messageacrypter.upper() #on met le texte en majuscule
+lg=len(acrypter) #on regarde la longueur du texte
+MessageCrypte="" #variable vide pour stocker le message crypté
+
+for i in range(lg): #on parcourt chaque lettre du texte
+    if acrypter[i]==' ': #si y a une espace alors on garde l'espace dans le message crypté
+        MessageCrypte+=' '
+    else:
+        asc=ord(acrypter[i])+cle # ord(...) transorme en ascii et +cle décale la lettre
+        MessageCrypte+=chr(asc+26*((asc<65)-(asc>90))) # 26*((asc<65)-(asc>90 formule pour revenir dans l'alphabet si on dépasse Z et chr(...) transforme de ascii en lettre
+
+print({MessageCrypte}) #afficher le message crypté
+
+
+#decryptage
+MessageCrypte="JC QAPGNR NMSP BCAMBCP LC BCTPYGR NYQ CRPC JMLE Y DYGPC HC JC BMLLCPYG QSP AC KCKC DMPSK"
+lg=len(MessageCrypte)
+MessageClair=""
+cle=24 # Décalage par rapport à Y (code ASCII : 24 + 1 = 25e lettre de l'alphabet)
+
+for i in range(lg):
+    if MessageCrypte[i]==' ':
+        MessageClair+=' '
+    else:
+        asc=ord(MessageCrypte[i])-cle
+        MessageClair+=chr(asc+26*((asc<65)-(asc>90)))
+
+print ({MessageClair})

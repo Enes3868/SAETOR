@@ -1,0 +1,28 @@
+Nous avons fait ici les exercices de prototypages proposés dans le cours pour mieux comprendre les enjeux et les scripts que l'on va être confronté durant cette SAE3.02
+On à classé les exercices celon leurs thèmes:
+Prototypage
+|
+|--> interface graphique
+|    |--> exo_1
+|    |--> exo_2
+|--> socket
+|    |-->client4_1
+|    |-->client4_2
+|    |-->client_1
+|    |-->client_2
+|    |-->client_3
+|    |-->server_1
+|    |-->server_2
+|    |-->server_3
+|    |-->server_4
+|--> thread
+|    |-->cours_1
+|    |-->cours_2
+|    |-->cours_3
+|    |-->exo_1
+|    |-->exo_2
+|    |-->exo_3
+|--> chiffrement
+|    |-->chiffrement asymétrique
+|    |-->chiffrement symétrique
+

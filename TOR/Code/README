@@ -1,0 +1,19 @@
+Topologie de notre code:
+
+Code
+|
+|--Code Client
+|  |-chiffrement.py
+|  |-client.py
+|
+|--Code Routeur
+|  |-Routeur.py
+|  |-base_donnees.py
+|  |-chiffrement.py
+|
+|--Code Server
+|  |-Master.py
+|  |-base_donnees.py
+
+On a mis certains fichiers en doublons car quand nous avons fait les tests nous avons trouvé que cela ne marchais pas 
+si c'était dans le dossier "Code" alors nous les avons disposé dans chacun des sous dossiers pour compléter chaque code.

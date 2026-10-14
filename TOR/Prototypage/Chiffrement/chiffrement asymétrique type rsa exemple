@@ -1,0 +1,13 @@
+if __name__ == "__main__":
+    try:
+        # Exemple : trouver l'inverse de 17 modulo 3120
+        a = 17
+        m = 3120
+        inv = mod_inverse(a, m)
+        print(f"L'inverse modulaire de {a} modulo {m} est : {inv}")
+
+        # Vérification
+        print(f"Vérification : ({a} * {inv}) % {m} = {(a * inv) % m}")
+
+    except Exception as e:
+        print(f"Erreur : {e}")
